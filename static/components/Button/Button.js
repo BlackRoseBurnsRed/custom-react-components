@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './button.css';
 
 export class Button extends React.Component {
     constructor(props) {
@@ -12,8 +13,9 @@ export class Button extends React.Component {
     }
 
     render() {
+        let buttonClass = `button ${this.props.type ? this.props.type : 'button-default'}`;
         return (
-            <button onClick={this.onClick.bind(this)}>Click me</button>
+            <div onClick={this.onClick.bind(this)} className={buttonClass}>Click me</div>
         )
     }
 }
