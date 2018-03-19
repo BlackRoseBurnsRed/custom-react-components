@@ -7,8 +7,8 @@ export class Checkbox extends React.Component {
         return (
             <label>
                 <input class="checkbox" type="checkbox" name="checkbox-test" />
-                    <span class="checkbox-custom"></span>
-                    <span class="label">{this.props.label}</span>
+                <span class="checkbox-custom"></span>
+                <span class="label">{this.props.label}</span>
             </label>
         )
     }
